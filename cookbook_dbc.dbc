@@ -1,0 +1,65 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Controller Translator
+VAL_TABLE_ query_attribute 3 "get_temperature" 2 "get_power" 1 "get_current" 0 "get_voltage" ;
+VAL_TABLE_ DoTable 4 "do_initialize" 3 "do_nothing" 2 "do_this_and_that" 1 "do_that" 0 "do_this" ;
+VAL_TABLE_ OnOff 2 "unknown" 1 "on" 0 "off" ;
+
+
+BO_ 2147491841 Response: 8 Translator
+ SG_ Temperature : 24|8@1- (0.1,0) [0|0] "C"  Controller
+ SG_ Power : 16|8@1- (0.1,0) [0|0] "kW"  Controller
+ SG_ Current : 8|8@1- (0.1,0) [-12.8|12.7] "A"  Controller
+ SG_ Voltage : 0|8@1- (1,0) [0|0] "V"  Controller
+
+BO_ 2147491840 ACK: 8 Translator
+ SG_ ACK_Sig : 0|8@1- (1,0) [0|0] ""  Controller
+
+BO_ 2147487745 Message2: 8 Controller
+ SG_ Msg2_Sig1 : 0|8@1- (1,0) [0|0] ""  Translator
+
+BO_ 2147487744 Message1: 8 Controller
+ SG_ Msg1_Sig2 : 8|8@1- (1,0) [0|0] ""  Translator
+ SG_ Msg1_Sig1 : 0|8@1+ (1,0) [0|0] ""  Translator
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 2147491840 ACK_Sig 2 "unknown" 1 "on" 0 "off" ;
+VAL_ 2147487745 Msg2_Sig1 3 "get_temperature" 2 "get_power" 1 "get_current" 0 "get_voltage" ;
+VAL_ 2147487744 Msg1_Sig1 4 "do_initialize" 3 "do_nothing" 2 "do_this_and_that" 1 "do_that" 0 "do_this" ;
+

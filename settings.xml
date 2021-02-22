@@ -1,0 +1,18 @@
+<settings>
+    <connections>
+        <LVPS_TENMA>
+            <can_channel>3</can_channel>
+            <can_application>CANoe</can_application>
+            <COM_port>COM10</COM_port>
+            <COM_baud>115200</COM_baud>
+            <dbc_path />
+        </LVPS_TENMA>
+        <DS378>
+            <can_channel>3</can_channel>
+            <can_application>python-can</can_application>
+            <IP>192.168.1.6</IP>
+            <Port>17123</Port>
+            <dbc_path />
+        </DS378>
+    </connections>
+</settings>
