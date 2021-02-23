@@ -51,37 +51,38 @@ def threading_lambda_control(thread_alive_bool):
         time.sleep(0.5)
 
 
-# Threading example 1, basic threading. Thread need to be finished, cannot kill by coder.
-print('########## Threading example 1, basic threading: ##########')
-thread_basic_handle = threading.Thread(target=threading_basic, args=(1,))
-thread_basic_handle.start()
-time.sleep(2)
-thread_basic_handle.join()  # wait for a thread to finish it's task
+if __name__ == '__main__':
+    # Threading example 1, basic threading. Thread need to be finished, cannot kill by coder.
+    print('########## Threading example 1, basic threading: ##########')
+    thread_basic_handle = threading.Thread(target=threading_basic, args=(1,))
+    thread_basic_handle.start()
+    time.sleep(2)
+    thread_basic_handle.join()  # wait for a thread to finish it's task
 
-# Threading example 2, using event object which can control thread start, stop easily
-print('########## Threading example 2, event object threading: ##########')
-thread_handle = threading_with_EventObject(threading.Event())
-thread_handle.setDaemon(True)  # set daemon thread where the thread will stop if main program (thread) exits
-thread_handle.start()
-input('Thread running, press any key to see thread stop effect.\n')
-thread_handle.stop_set()
-print('Thread shall stopped now\n')
-'''
-alternatively use
-stop_thread = threading.Event()
-thread_handle = threading_with_EventObject()
-stop_thread.set()
-'''
+    # Threading example 2, using event object which can control thread start, stop easily
+    print('########## Threading example 2, event object threading: ##########')
+    thread_handle = threading_with_EventObject(threading.Event())
+    thread_handle.setDaemon(True)  # set daemon thread where the thread will stop if main program (thread) exits
+    thread_handle.start()
+    input('Thread running, press any key to see thread stop effect.\n')
+    thread_handle.stop_set()
+    print('Thread shall stopped now\n')
+    '''
+    alternatively use
+    stop_thread = threading.Event()
+    thread_handle = threading_with_EventObject()
+    stop_thread.set()
+    '''
 
-# Threading example 3, using lambda to control thread infinite loop
-print('########## Threading example 3, lambda threading: ##########')
-thread_manager={'thread_labmda_alive': True}
-thread_lambda_handle = threading.Thread(target=threading_lambda_control,
-                                        args=(lambda: thread_manager['thread_labmda_alive'], ))
-thread_lambda_handle.start()
-time.sleep(2)
-thread_manager['thread_labmda_alive'] = False
+    # Threading example 3, using lambda to control thread infinite loop
+    print('########## Threading example 3, lambda threading: ##########')
+    thread_manager={'thread_labmda_alive': True}
+    thread_lambda_handle = threading.Thread(target=threading_lambda_control,
+                                            args=(lambda: thread_manager['thread_labmda_alive'], ))
+    thread_lambda_handle.start()
+    time.sleep(2)
+    thread_manager['thread_labmda_alive'] = False
 
 
-input('press any key to exit')
+    input('press any key to exit')
 
