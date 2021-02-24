@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "InitialRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "MessageID": {
+          "type": "integer",
+          "description": "Initialize to 0. Must be incremented from last message received.",
+          "maximum": 65535,
+          "minimum": 0,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false
+        },
+        "StatusCode": {
+          "type": "string",
+          "description": "Use Fail to communicate VA detection of an error to the GA.",
+          "enum": [
+            "OK",
+            "Fail"
+          ]
+        },
+        "VAMaximumReceivablePower": {
+          "type": "integer",
+          "description": "Number of watts that the VA is willing to receive, as measured at the output of the VA.",
+          "maximum": 22000,
+          "minimum": 0,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false
+        },
+        "VAControlLoop": {
+          "type": "boolean",
+          "description": "\"true\" if VA executes a control loop, \"false\" otherwise."
+        },
+        "VAMaximumGroundClearance": {
+          "type": "integer",
+          "description": "Maximum height of the VA in mm.",
+          "maximum": 250,
+          "minimum": 100,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false
+        },
+        "VAMinimumGroundClearance": {
+          "type": "integer",
+          "description": "Minimum height of the VA in mm.",
+          "maximum": 250,
+          "minimum": 100,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false
+        },
+        "VACoilType": {
+          "type": "string",
+          "description": "Type of VA coil.",
+          "enum": [
+            "Circular",
+            "DD",
+            "Solenoid"
+          ]
+        },
+        "VANaturalFrequency": {
+          "type": "integer",
+          "description": "The natural resonant frequency of the VA not in the presence of a GA.",
+          "maximum": 10000000,
+          "minimum": 1
+        },
+        "VAVendor": {
+          "type": "string",
+          "description": "Name of the VA vendor.",
+          "maxLength": 64,
+          "minLength": 1
+        },
+        "VAModel": {
+          "type": "string",
+          "description": "Model of VA device.",
+          "maxLength": 64,
+          "minLength": 1
+        },
+        "VAProtocolVersion": {
+          "$ref": "CommonTypes.json#/definitions/ProtocolVersion"
+        },
+        "VASupportedFinePositioningMethods": {
+          "$ref": "CommonTypes.json#/definitions/FinePositioningMethods"
+        }
+      },
+      "required": [
+        "MessageID",
+        "StatusCode",
+        "VAMaximumReceivablePower",
+        "VAControlLoop",
+        "VAMaximumGroundClearance",
+        "VAMinimumGroundClearance",
+        "VACoilType",
+        "VANaturalFrequency",
+        "VAVendor",
+        "VAModel"
+      ]
+    }
+  }
+}
