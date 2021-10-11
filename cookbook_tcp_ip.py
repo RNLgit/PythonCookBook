@@ -1,17 +1,5 @@
 """
-Title : cookbook_tcp_ip.py
-
-Description: Cookbook of Python TCP/IP communications (socket)
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Python TCP/IP communications (socket) messaging template for server side and client side
 """
 import socket
 import pickle

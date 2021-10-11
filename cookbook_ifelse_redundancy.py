@@ -1,17 +1,5 @@
 """
-Title : cookbook_ifelse_redundancy.py
-
-Description: Ideas of how to redundant if-else or nested if else use to be professional
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 23/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Ideas of how to redundant if-else or nested if else usage
 """
 
 

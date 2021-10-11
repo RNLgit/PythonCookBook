@@ -1,19 +1,6 @@
 """
-Title : cookbook_CANtranslator.py
-
-Description: Cookbook of Python translate CAN message to control other device
-
-Author: Runnan Li
-
+Description: a simple Python CAN messaging method to control other device
 Pre-requisite: Vector_CAN_API
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
 """
 from Vector_CAN_API import Vector_CAN
 import threading

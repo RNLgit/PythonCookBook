@@ -1,17 +1,5 @@
 """
-Title : cookbook_commandline.py
-
-Description: Cookbook of Python program that can be called from commandline with arguments
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: a commandline calling method for invoke python script with commandline
 """
 import getopt
 import sys

@@ -1,18 +1,11 @@
 """
-Title : cookbook_multiprocess.py
-
-Description: Cookbook of Python multi processing
-
-Author: Runnan Li
-
-**Revision History:**
+Description: Python multi processing cookbook template
 
 +---------+------------+------------+-----------------------------------------------------+
 | Version |     Date   |   Author   |                  Change Description                 |
 +---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
+|   0.1   | 22/02/2021 |    R Li    |                   Initial Version                   |
 +---------+------------+------------+-----------------------------------------------------+
-
 """
 from multiprocessing import Process, Queue
 import threading

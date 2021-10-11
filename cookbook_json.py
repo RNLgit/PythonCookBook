@@ -1,17 +1,5 @@
 """
-Title : cookbook_json.py
-
 Description: example use of json communications
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 24/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
 
 the cb_json structure
 

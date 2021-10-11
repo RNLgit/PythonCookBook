@@ -1,17 +1,5 @@
 """
-Title : cookbook_saveloadxml.py
-
-Description: Cookbook of Python program that can save param to xml and load from xml
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: save param to xml and load from xml
 """
 import xml.etree.ElementTree as ET
 

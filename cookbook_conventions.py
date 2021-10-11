@@ -1,17 +1,5 @@
 """
-Title : cookbook_conventions.py
-
-Description: Cookbook of Python conventions for pythonic coding
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 23/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Python conventions example
 """
 
 __version__ = 0.1

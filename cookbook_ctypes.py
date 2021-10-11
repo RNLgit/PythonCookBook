@@ -1,17 +1,5 @@
 """
-Title : cookbook_ctypes.py
-
-Description: Cookbook of Python program that can calls .dll that written in C / C++
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Python program that can calls dynamic lib (.dll) that written in C / C++
 """
 import ctypes
 import os

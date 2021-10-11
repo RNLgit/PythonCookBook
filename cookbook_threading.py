@@ -1,17 +1,5 @@
 """
-Title : cookbook_threading.py
-
-Description: Cookbook of Python multi threads (threading)
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Python multi threads (threading) templates
 """
 import threading
 import time, datetime

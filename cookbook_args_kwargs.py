@@ -1,17 +1,5 @@
 """
-Title : cookbook_args_kwargs.py
-
-Description: args and kwargs use in function def
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 23/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: args and kwargs showcase use in function def
 """
 
 

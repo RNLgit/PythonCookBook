@@ -1,17 +1,5 @@
 """
-Title : cookbook_serial.py
-
-Description: Cookbook of Python Serial communications (PySerial)
-
-Author: Runnan Li
-
-**Revision History:**
-
-+---------+------------+------------+-----------------------------------------------------+
-| Version |     Date   |   Author   |                  Change Description                 |
-+---------+------------+------------+-----------------------------------------------------+
-|   0.1   | 22/02/2021 | Runnan Li  |                   Initial Version                   |
-+---------+------------+------------+-----------------------------------------------------+
+Description: Python Serial communications (PySerial) messaging template
 """
 import serial
 import time
